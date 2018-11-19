@@ -1,0 +1,5 @@
+<div class="col-md-6">
+    <label class="control-heading">Select File</label>
+    <input type="file" [multiple]="multiple" #fileInput (change)="selectFile($event)">
+    <input type="button" style="margin-top: 15px;" [disabled]="!isUploadEditable" class="data-entry-button btn-pink" (click)="uploadFile()" value="Upload" title="{{globalService.generateTooltip('upload attachment','Click to upload document.')}}" data-html="true" data-toggle="tooltip" data-placement="bottom" />
+</div>
